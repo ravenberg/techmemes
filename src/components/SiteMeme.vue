@@ -35,7 +35,7 @@ const copyImage = () => {
 
 <template>
   <li class="px-4 relative">
-    <button class="absolute right-7 bottom-2 rounded py-2 px-1 bg-gray-800 text-gray-200 opacity-70 hover:opacity-100 transition" @click="copyImage">
+    <button class="absolute right-7 bottom-2 rounded py-2 px-1 bg-gray-800 text-gray-200 opacity-70 hover:opacity-100 transition" @pointerup="copyImage">
       <span v-if="copied">✅ Copied</span>
       <span v-else>📋 Copy</span>
     </button>
